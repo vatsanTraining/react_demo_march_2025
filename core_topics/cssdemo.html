@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understand CSS</title>
+    <link rel="stylesheet" href="styles/cssdemo.css">
+    <style>
+        /* id based selctor */
+        #majheading {
+            color: #0000ff;
+        }
+
+        /* class Based selector */
+
+        .highlight {
+            color: #ff0000;
+        }
+
+        p {
+            color: #00ff00;
+        }
+        .outer{
+
+            font-size: 1.2em;
+            color: #ff0000;
+        }
+        .child{
+            font-size: 1.8em !important;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="majheading" class="highlight" style="color: orchid;">CSS Styling</h1>
+    <h2 class="highlight">NPCI-Chennai</h2>
+    <p class="highlight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim repudiandae, blanditiis animi
+        molestiae iusto non dignissimos sit facilis, reiciendis sequi vitae vero ullam suscipit, nemo commodi!
+        Consequatur, illo dolorum. Architecto!</p>
+
+    <div class="outer">
+
+        <p class="child">Child Item</p>
+        <p class="child">Another Child Item</p>
+
+        <div class="inner">Child</div>
+
+    </div>
+
+</body>
+
+</html>

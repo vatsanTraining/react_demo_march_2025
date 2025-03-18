@@ -1,0 +1,11 @@
+{
+    "customers": [
+      { "id": "1", "customerName": "Ramesh", "location": "Chennai","email":"ram@abc.com" },
+      { "id": "2", "customerName": "Rajesh", "location": "Mumbaiu","email":"raj@abc.com" }
+    ],
+    "pages":[
+        {"id":101,"linkRef":"home","linkText":"Home"},
+        {"id":102,"linkRef":"about","linkText":"about"}
+        
+    ]
+  }

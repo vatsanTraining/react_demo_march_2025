@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="K.Srivatsan">
+    <meta name="description" content="training,demo,learning">
+    <meta http-equiv="refresh" content="50">
+    <title>Taxi Service</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="shortcut icon" href="./images/taxi-icon.jpeg" type="image/x-icon">
+    <style>
+        /* Difference between rem em */
+        p {
+            /* font-size: 1.5rem; */
+            font-size: 1.5em;
+        }
+
+        footer {
+            font-size: 10px;
+        }
+
+        .container {
+            height: 200px;
+            
+        }
+
+        .box {
+
+            width: 200px;
+            height: 100px;
+            border: 1px solid blueviolet;
+            background-image: linear-gradient(lightblue, lightgreen);
+            display: inline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1 id="mainHeading">Navalur Taxi Service</h1>
+
+        <img src="images/menu.png" alt="menu" class="menu-icon">
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="register.html" target="_blank">Register</a></li>
+                <li><a href="login.html"><button>Login</button></a></li>
+
+
+            </ul>
+
+
+        </nav>
+    </header>
+    <main>
+        <!-- <ul>
+            <li>Trial</li>
+            <li>One More Trial</li>
+        </ul> -->
+        <section id="container">
+            <article id="home"></article>
+            <article id="services"></article>
+            <article id="testimonials"></article>
+            <h2>Our Customers Speak</h2>
+
+            <!-- place a customer image and few line of text -->
+            <div class="container">
+
+                <div class="box">
+                    <img src="./images/customer.png" alt="" srcset="" style="float:left ;width: 50px; height: 50px;">
+                   <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, expedita illo. Sit quod molestiae
+                    cupiditate provident omnis repellendus magni dolores suscipit magnam nesciunt, porro fugiat
+                    facere
+                    repudiandae vel quae minus!
+                 </p>
+                </div>
+                <div class="box">
+                    <img src="./images/customer.png" alt="" srcset="" style="float:left ;width: 50px; height: 50px;">
+                   <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, expedita illo. Sit quod molestiae
+                    cupiditate provident omnis repellendus magni dolores suscipit magnam nesciunt, porro fugiat facere
+                    repudiandae vel quae minus!
+                    </p>
+
+                </div>
+                <div class="box">
+                    <img src="./images/customer.png" alt="" srcset="" style="float:left ;width: 50px; height: 50px;">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, expedita illo. Sit quod molestiae
+                        cupiditate provident omnis repellendus magni dolores suscipit magnam nesciunt, porro fugiat
+                        facere
+                        repudiandae vel quae minus!
+                    </p>
+
+                </div>
+
+            </div>
+            <article id="packages">
+                <h2 class="centerText primary">Popular Packages</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Package</th>
+                            <th>Fare</th>
+                            <th>Distance</th>
+                            <th>Extra</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 Hrs</td>
+                            <td>Rs.500</td>
+                            <td>10 Kms</td>
+                            <td>Rs.15 per Km
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2 Hrs</td>
+                            <td>Rs.750</td>
+                            <td>20 Kms</td>
+                            <td>Rs.15 per km</td>
+                        </tr>
+                        <tr>
+                            <td>4 Hrs</td>
+                            <td>Rs.1250</td>
+                            <td>40 Kms</td>
+                            <td>Rs.12 per km</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </article>
+        </section>
+        <aside id="video">
+            <h2 class="centerText secondary">Demo</h2>
+            <video src="./videos/video.mp4" controls autoplay></video>
+            <audio src="./audios/audio.mp3" controls></audio>
+        </aside>
+    </main>
+    <footer>
+        <p>Designed By ABC Software Limited ©️ 2025-2026</p>
+        <p><a href="mailto:admin@abc.com">Contact Admin</a></p>
+    </footer>
+
+
+</body>
+
+</html>

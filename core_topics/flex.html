@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var value1 ='123';
+        var value2 ='123.45'
+        console.log(parseFloat(value1)+123.23);
+
+    </script>
+    <style>
+        body {
+
+            height: 800px;
+        }
+
+        .container {
+            display: flex;
+            height: 50%;
+            border: 2px solid gold;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .box {
+            width: 50px;
+            height: 25%;
+            border: 1px solid green;
+            background-image: linear-gradient(lightblue, lightgreen);
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .box:nth-child(even) {
+            /* display: none; */
+            visibility: hidden;
+        }
+
+        /* hide middle box */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">One</div>
+        <div class="box">Two</div>
+        <div class="box">Three</div>
+    </div>
+
+</body>
+
+</html>

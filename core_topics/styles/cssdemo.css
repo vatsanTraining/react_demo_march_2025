@@ -1,0 +1,16 @@
+
+.outer{
+
+    width: 40%;
+    height: 100px;
+    border: 1px solid blue;
+    
+}
+
+.inner{
+
+    width: 20%;
+    height: 50px;
+    border: inherit;
+   
+}

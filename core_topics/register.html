@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        fieldset {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration</h1>
+    <datalist id="places">
+        <option>Navalur</option>
+        <option>Mount Road</option>
+        <option>Central</option>
+        <option>Airport</option>
+    </datalist>
+    <form action="login.html" method="post">
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" required>
+        </div>
+        <div>
+            <label for="lastName">LastName</label>
+            <input type="text" name="lastName" id="lastName" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" multiple required>
+        </div>
+        <div>
+
+            <fieldset>
+                <caption>Prefered Vechile</caption>
+
+                <input type="radio" name="prefVechile" id="prefVechile1" 
+                   value="Sedan">
+                  <label for="prefVechile1">Sedan</span>
+
+                    <input type="radio" name="prefVechile" id="prefVechile2"
+                     value="HatchBack">
+                    <label for="prefVechile2">Hatch Back</span>
+
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <caption>Package Type</caption>
+                <input type="checkbox" name="package" id="package1">
+                <label for="package1">4 Hrs</label>
+
+                <input type="checkbox" name="package" id="package2">
+
+                <label for="package2">6 Hrs</label>
+
+            </fieldset>
+        </div>
+        <div><label for="pickupDate">Pickup Date</label>
+            <input type="date" id="pickupdate" name="pickupDate">
+        </div>
+        <div>
+            <label for="pickupTime">PickupTime</label>
+            <input type="time" id="pickupTime" name="pickupTime">
+        </div>
+
+        <div>
+            <label for="pickup">Pick Up Location</label>
+            <input type="text" list="places" name="pickup" id="pickup">
+        </div>
+        <div>
+            <label for="drop">Drop Location</label>
+            <input type="text" list="places" name="drop" id="drop">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>

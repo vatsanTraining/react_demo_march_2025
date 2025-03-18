@@ -1,0 +1,70 @@
+/* style table , th,tr,td */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+table{
+
+    border: 1px solid blue;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+
+}
+
+tr,td,th{
+
+    border: 1px solid blue;
+}
+
+th{
+    background-color: beige;
+}
+
+tbody tr:nth-child(odd){
+    background-color: aqua;
+}
+
+.centerText{
+    text-align: center;
+}
+
+.primary{
+    color: brown;
+}
+.secondary{
+    color: gold;
+}
+
+nav ul>li{
+    display: inline;
+}
+
+a{
+
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+.menu-icon{
+
+    width: 30px;
+    height: 30px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+/* Pseduo class */
+a:hover{
+    border-bottom: 2px solid goldenrod;
+}
+
+p::first-letter{
+
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 2em;
+    
+}
+
