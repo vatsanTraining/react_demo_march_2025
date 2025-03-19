@@ -72,3 +72,8 @@ p::first-letter{
     
 }
 
+label{
+
+    padding: 5px;
+    display: inline-block;
+}

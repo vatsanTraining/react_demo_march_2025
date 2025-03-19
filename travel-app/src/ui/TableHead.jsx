@@ -4,15 +4,15 @@ import '../global.css'
 
 const TableHead = ({ columns }) => {
 
-    const createContent = (value,idx)=>{
+    const createContent = (value, idx) => {
 
-        return <th key={idx}>{value}</th>
+        return <th key={idx}>{value.toUpperCase()}</th>
     }
     return (
         <thead>
             <tr>
                 {
-                 columns.map(createContent)
+                    columns.map(createContent)
                 }
             </tr>
         </thead>

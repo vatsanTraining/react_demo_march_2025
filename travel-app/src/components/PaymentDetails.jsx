@@ -42,13 +42,37 @@ const PaymentDetails = () => {
 
     }
 
+    const deleteData = (id) => {
+
+        console.log('Delete Called', id)
+
+        const url = `http://localhost:3000/payments/${id}`
+
+        console.log(url)
+        axios.delete(url).then((response) => {
+
+            console.log(response.status)
+            console.log(response.statusText)
+
+            let updatedList = paymentList.filter(item => item.id !== id);
+
+            console.log(updatedList)
+            setPaymentList(currVal => updatedList)
+
+
+        })
+    }
+
+    const editData = (id) => {
+        console.log('Edit Called', id)
+    }
     return (
 
         <>
             <AddPayment onChange={onChange} onSubmit={onSubmit} values={values}></AddPayment>
             <table>
-                <TableHead columns={['id', 'customerName', 'amount', 'currency']} ></TableHead>
-                <TableBody data={paymentList}></TableBody>
+                <TableHead columns={['id', 'customerName', 'amount', 'currency', 'action', 'action']} ></TableHead>
+                <TableBody data={paymentList} handleDelete={deleteData}></TableBody>
 
             </table>
         </>

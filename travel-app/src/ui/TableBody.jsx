@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TableBody = ({ data }) => {
+const TableBody = ({ data, handleDelete,handleEdit }) => {
     const tableRow = (item, idx) => {
         return (
             <tr key={idx}>
@@ -10,7 +10,10 @@ const TableBody = ({ data }) => {
                         return <td key={key}>{value}</td>
 
                     })
+
                 }
+                <td><button onClick={()=>handleEdit(item.id)}>Edit</button></td>
+                <td><button onClick={() => handleDelete(item.id)}>Delete</button></td>
             </tr>
         )
 
