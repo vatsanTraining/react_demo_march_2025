@@ -7,5 +7,16 @@
         {"id":101,"linkRef":"home","linkText":"Home"},
         {"id":102,"linkRef":"about","linkText":"about"}
         
+    ],
+    "payments":[
+      {"id":201,"CustomerName":"Shiv","Amount":4500,"Currency":"INR"},
+      {"id":202,"CustomerName":"Anand","Amount":1500,"Currency":"USD"},
+      {"id":203,"CustomerName":"Ganesh","Amount":500,"Currency":"EURO"}
+
+    ],
+    "profiles":[
+      {"id":301, "Name":"Ravinder","avatar":"ravi.png","tagName":"Food Blogger"},
+      {"id":302, "Name":"Subash","avatar":"suba.png","tagName":"Investment"}
+      
     ]
   }

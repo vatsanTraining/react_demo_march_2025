@@ -4,6 +4,10 @@ import Navigation from '../components/Navigation'
 import TableHead from '../ui/TableHead'
 import TableBody from '../ui/TableBody'
 import StateDemo from '../components/StateDemo'
+import '../rootlayout.css'
+import PaymentDetails from '../components/PaymentDetails'
+
+
 const RootLayout = () => {
   let user = { userName: 'Ramesh', role: 'Admin' }
 
@@ -18,7 +22,7 @@ const RootLayout = () => {
     { customerName: 'Ramesh', location: 'Chennai', email: 'ram@abc.com' },
     { customerName: 'Rajesh', location: 'Mumbai', email: 'raj@abc.com' },
     { customerName: 'Siva', location: 'Mumbai', email: 'siv@abc.com' },
-    
+
   ]
   const [custList, setCustList] = useState(data)
 
@@ -28,12 +32,12 @@ const RootLayout = () => {
 
   const handleChange = (event) => {
     const srchString = event.target.value
-    setCustList(prev=>prev.filter((item) =>  item.customerName.toLowerCase().includes(srchString.toLowerCase()) ))
+    setCustList(prev => prev.filter((item) => item.customerName.toLowerCase().includes(srchString.toLowerCase())))
 
   }
   return (
-    <div>
-      <header>
+    <div className='container'>
+      <header className='top-section'>
         <Header user={user}></Header>
         <Navigation linkList={links}></Navigation>
       </header>
@@ -48,6 +52,8 @@ const RootLayout = () => {
           <TableHead columns={columns}></TableHead>
           <TableBody data={custList}></TableBody>
         </table>
+
+        <PaymentDetails></PaymentDetails>
       </main>
       <footer>
         <StateDemo></StateDemo>
