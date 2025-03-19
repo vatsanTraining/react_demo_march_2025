@@ -15,6 +15,7 @@ const Header = ({ user }) => {
 
             {/* <div>            <Image imageRef={avatar} altText={'Avatar'}></Image>
             </div> */}
+            
         </>
     )
 }

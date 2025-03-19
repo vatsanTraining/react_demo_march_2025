@@ -1,22 +1,81 @@
 {
-    "customers": [
-      { "id": "1", "customerName": "Ramesh", "location": "Chennai","email":"ram@abc.com" },
-      { "id": "2", "customerName": "Rajesh", "location": "Mumbaiu","email":"raj@abc.com" }
-    ],
-    "pages":[
-        {"id":101,"linkRef":"home","linkText":"Home"},
-        {"id":102,"linkRef":"about","linkText":"about"}
-        
-    ],
-    "payments":[
-      {"id":201,"CustomerName":"Shiv","Amount":4500,"Currency":"INR"},
-      {"id":202,"CustomerName":"Anand","Amount":1500,"Currency":"USD"},
-      {"id":203,"CustomerName":"Ganesh","Amount":500,"Currency":"EURO"}
-
-    ],
-    "profiles":[
-      {"id":301, "Name":"Ravinder","avatar":"ravi.png","tagName":"Food Blogger"},
-      {"id":302, "Name":"Subash","avatar":"suba.png","tagName":"Investment"}
-      
-    ]
-  }
+  "customers": [
+    {
+      "id": "1",
+      "customerName": "Ramesh",
+      "location": "Chennai",
+      "email": "ram@abc.com"
+    },
+    {
+      "id": "2",
+      "customerName": "Rajesh",
+      "location": "Mumbaiu",
+      "email": "raj@abc.com"
+    }
+  ],
+  "pages": [
+    {
+      "id": 101,
+      "linkRef": "home",
+      "linkText": "Home"
+    },
+    {
+      "id": 102,
+      "linkRef": "about",
+      "linkText": "about"
+    }
+  ],
+  "payments": [
+    {
+      "id": 201,
+      "customerName": "Shiv",
+      "cmount": 4500,
+      "currency": "INR"
+    },
+    {
+      "id": 202,
+      "customerName": "Anand",
+      "amount": 1500,
+      "currency": "USD"
+    },
+    {
+      "id": 203,
+      "customerName": "Ganesh",
+      "amount": 500,
+      "currency": "EURO"
+    },
+    {
+      "id": "109",
+      "customerName": "Ramesh Kumar",
+      "amount": "5600",
+      "currency": "INR"
+    },
+    {
+      "id": "450",
+      "customerName": "Tom",
+      "amount": "4500",
+      "currency": "INR"
+    }
+  ],
+  "profiles": [
+    {
+      "id": 301,
+      "Name": "Ravinder",
+      "avatar": "/images/ravi.png",
+      "tagName": "Food Blogger"
+    },
+    {
+      "id": 302,
+      "Name": "Subash",
+      "avatar": "/images/suba.png",
+      "tagName": "Investment"
+    }
+  ],
+  "users": [
+    {
+      "id": "e519",
+      "userName": "ramesh",
+      "password": "india"
+    }
+  ]
+}

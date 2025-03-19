@@ -5,6 +5,7 @@ const TopHeading = ({ title, user }) => {
         <>
             <h1>{title}</h1>
             {/* <p>Logged in User:{user.role} {user.userName}</p> */}
+            <button onClick={()=> {sessionStorage.removeItem('currentUser')}}>Logout</button>
         </>
     )
 }
