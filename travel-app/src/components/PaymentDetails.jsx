@@ -65,6 +65,9 @@ const PaymentDetails = () => {
 
     const editData = (id) => {
         console.log('Edit Called', id)
+        const itemToEdit = paymentList.find((item) => item.id === id);
+        console.log(itemToEdit)
+
     }
     return (
 
@@ -72,7 +75,7 @@ const PaymentDetails = () => {
             <AddPayment onChange={onChange} onSubmit={onSubmit} values={values}></AddPayment>
             <table>
                 <TableHead columns={['id', 'customerName', 'amount', 'currency', 'action', 'action']} ></TableHead>
-                <TableBody data={paymentList} handleDelete={deleteData}></TableBody>
+                <TableBody data={paymentList} handleDelete={deleteData} handleEdit={editData}></TableBody>
 
             </table>
         </>

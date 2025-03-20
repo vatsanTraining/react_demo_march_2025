@@ -27,16 +27,16 @@
   ],
   "payments": [
     {
-      "id": "201",
-      "customerName": "Shiv",
-      "cmount": 4500,
-      "currency": "INR"
+      "id": "202",
+      "customerName": "Ramesh",
+      "amount": "4500",
+      "currency": "6000"
     },
     {
-      "id": "202",
-      "customerName": "Anand",
-      "amount": 1500,
-      "currency": "USD"
+      "id": "1099",
+      "customerName": "ramesh",
+      "amount": "4500",
+      "currency": "inr"
     }
   ],
   "profiles": [

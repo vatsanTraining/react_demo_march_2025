@@ -23,7 +23,12 @@ const AddPayment = ({ onChange, onSubmit }) => {
                 </div>
                 <div>
                     <Label text={'Currency'}></Label>
-                    <input type="text" name="currency" id="currency" onChange={onChange} />
+                    <select name="currency" id='currency' onChange={onChange}>
+
+                        <option value="USD">USD</option>
+                        <option value="INR">INR</option>
+
+                    </select>
                 </div>
                 <div>
                     <input type="submit" value="Add" />

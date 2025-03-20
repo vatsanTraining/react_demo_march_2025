@@ -75,5 +75,14 @@ p::first-letter{
 label{
 
     padding: 5px;
-    display: inline-block;
+    display: table-cell;
+    width: 1px;
+    white-space: nowrap;
 }
+
+input{ 
+    width:10%; 
+    margin: 8px; 
+    border: 1px solid blue; 
+    border-radius: 4px; 
+} 

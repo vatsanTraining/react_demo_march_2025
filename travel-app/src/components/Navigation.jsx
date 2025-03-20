@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from '../ui/Link'
+import { NavLink } from 'react-router-dom'
 
 const Navigation = ({ linkList }) => {
     const createLink = (value, idx) => {
-        return <Link key ={idx} linkRef={value.linkRef} linkText={value.linkText}></Link>
-    }
+        return <NavLink key={idx} to={value.linkRef}>{value.linkText}</NavLink>   }
     return (
         <div>
             {
@@ -12,7 +12,7 @@ const Navigation = ({ linkList }) => {
                 //     <Link linkRef={value.linkRef} linkText={value.linkText}></Link>
                 //  })
 
-                 linkList.map(createLink)
+                linkList.map(createLink)
             }
         </div>
     )
