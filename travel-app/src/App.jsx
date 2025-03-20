@@ -9,6 +9,10 @@ import PaymentDetails from './components/PaymentDetails'
 import Table from './components/Table'
 import ProfilePage from './components/ProfilePage'
 import StateDemo from './components/StateDemo'
+import SalesDetails from './components/SalesDetails'
+import StaffDetails from './components/StaffDetails'
+import PrivateRoute from './components/PrivateRoute'
+import FinanceDetails from './components/FinanceDetails'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,8 +23,17 @@ function App() {
   const myrouter = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
-        <Route index element={<Login />}></Route>
+        <Route index element={ <Login />}></Route>
         <Route path="/home" element={<Login />} />
+        <Route path="/about" element={<StateDemo />} />
+        <Route path="/finance" element={
+          <PrivateRoute><FinanceDetails /></PrivateRoute>} />
+        <Route path="/profile/:id/:dept" element={<ProfilePage />} />
+
+        <Route path='/dashboard' element={<DashBoardLayout />}>
+          <Route path='sales' element={<SalesDetails />} />
+          <Route path='staff' element={<StaffDetails />} />
+        </Route>
         <Route path="/about" element={<StateDemo />} />
 
         <Route path="/payments" element={<PaymentDetails />} />

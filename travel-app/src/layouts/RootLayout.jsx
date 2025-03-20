@@ -7,20 +7,31 @@ import StateDemo from '../components/StateDemo'
 import '../rootlayout.css'
 import PaymentDetails from '../components/PaymentDetails'
 import { Outlet } from 'react-router-dom'
+import MyProvider from '../context-demo/MyProvider'
+import { UserContext } from '../utils/MyContext'
 
 
 const RootLayout = () => {
   let links = [
     { linkRef: '/home', linkText: 'Home' },
     { linkRef: '/about', linkText: 'About' },
-    { linkRef: '/payments', linkText: 'Payment' }
+    { linkRef: '/payments', linkText: 'Payment' },
+    { linkRef: '/dashboard', linkText: 'DashBoard' },
+    { linkRef: '/finance', linkText: 'Finance' },
+
+
   ]
 
+  const [user, setUser] = useState('Guest')
   return (
 
     <div>
-      <Navigation linkList={links}></Navigation>
-      <Outlet></Outlet>
+      <UserContext.Provider value={{ user, setUser }}>
+        <Navigation linkList={links}></Navigation>
+        <Outlet></Outlet>
+
+      </UserContext.Provider>
+      {/* <MyProvider></MyProvider> */}
     </div>
   )
 

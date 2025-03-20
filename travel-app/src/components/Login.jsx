@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { createContext, useContext, useState } from 'react'
 import axios from 'axios'
+import { UserContext } from '../utils/MyContext'
+
 const Login = () => {
+
 
     const [user, setUser] = useState({ userName: '', password: '' })
 
+    const ctx = useContext(UserContext)
 
     const handleChange = (event) => {
 
@@ -22,14 +26,19 @@ const Login = () => {
 
         sessionStorage.setItem('currentUser', user.userName)
 
+        ctx.setUser(user.userName)
+        
         axios.post("http://localhost:3000/users", user)
             .then(response => console.log('user Added'))
+
+
     }
 
 
     return (
 
         <>
+
             <form action="" onSubmit={handleSubmit}>
 
                 <div>
