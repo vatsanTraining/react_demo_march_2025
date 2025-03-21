@@ -20,14 +20,16 @@ const Login = () => {
 
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
+
+        event.preventDefault()
 
         console.log('on submit called', user)
 
         sessionStorage.setItem('currentUser', user.userName)
 
         ctx.setUser(user.userName)
-        
+
         axios.post("http://localhost:3000/users", user)
             .then(response => console.log('user Added'))
 
