@@ -9,12 +9,20 @@ import { Provider } from 'react-redux'
 import ComponentTwo from './demo-one/ComponentTwo'
 import UIFontSizeReducer from './demo-one/UIFontSizeReducer'
 import UnderStandUseRef from './demo-one/UnderStandUseRef'
+import CounterSlice from './demo-two/CounterSlice'
+import { CounterComp } from './demo-two/CounterComp'
 function App() {
   const [count, setCount] = useState(0)
 
   const store = configureStore({
     reducer: { color: UIColorReducer, font: UIFontSizeReducer }
   })
+
+  const counterStore = configureStore({
+    reducer: { numberCounter: CounterSlice.reducer }
+  })
+
+
   return (
     <>
       <Provider store={store}>
@@ -28,6 +36,10 @@ function App() {
 
       </Provider>
       <UnderStandUseRef></UnderStandUseRef>
+
+      <Provider store={counterStore}>
+        <CounterComp></CounterComp>
+      </Provider>
     </>
   )
 }
